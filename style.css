@@ -4,9 +4,19 @@ body {
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+main > * {
+    padding: 0 20%;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
+    padding: 16px 0;
 }
 
 nav ul {
@@ -15,6 +25,8 @@ nav ul {
     margin: 0;
     padding: 0;
     gap: 15px;
+    color: #E5E7EB;
+    align-items: center;
 }
 
 header, .hero, footer {
@@ -27,6 +39,21 @@ section {
 
 .container {
     display: flex;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #3882F6;
 }
 
 .info {
@@ -39,15 +66,26 @@ section {
     color: #F9FAF8;
 }
 
-.hero>h1 {
+.hero {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hero-heading {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
 }
 
-.hero>p {
+.hero-text {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.hero-image {
+    background-color: #E5E7EB;
 }
 
 .btn-sign-up {

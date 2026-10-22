@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+:root {
+    --color-primary: #3882F6;
+    --color-dark: #1F2937;
+    --color-light: #E5E7EB;
+    --color-white: #F9FAFB;
+}
+
 body {
     font-family: Roboto, sans-serif;
     margin: 0;
-    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,12 +33,12 @@ nav ul {
     margin: 0;
     padding: 0;
     gap: 15px;
-    color: #E5E7EB;
     align-items: center;
 }
 
 header, .hero, footer {
-    background-color: #1F2937;
+    background-color: var(--color-dark);
+    color: var(--color-light);
 }
 
 section {
@@ -41,7 +47,7 @@ section {
     padding-bottom: 80px;
 }
 
-.container {
+.card-grid {
     display: flex;
     gap: 20px;
 }
@@ -55,21 +61,21 @@ section {
     text-align: center;
 }
 
-.card-img {
+.card-image {
     width: 150px;
     height: 150px;
-    border: 2.5px solid #3882F6;
+    border: 2.5px solid var(--color-primary);
     border-radius: 10%;
 }
 
-.info {
+.info-section {
     flex-direction: column;
     align-items: center;
 }
 
 .logo {
     font-size: 24px;
-    color: #F9FAFB;
+    color: var(--color-white);
 }
 
 .hero {
@@ -84,13 +90,12 @@ section {
 
 .hero-heading {
     font-size: 48px;
-    color: #F9FAFB;
+    color: var(--color-white);
     font-weight: 900;
 }
 
 .hero-text {
     font-size: 18px;
-    color: #E5E7EB;
     line-height: 1.2;
 }
 
@@ -98,30 +103,29 @@ section {
     flex: 1;
     aspect-ratio: 16/9;
     background-color: #6B7280;
-    color: #E5E7EB;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .btn-sign-up {
-    background-color: #3882F6;
+    background-color: var(--color-primary);
     border-radius: 5px;
     border-style: none;
     padding: 8px 35px;
-    color: #F9FAFB;
+    color: var(--color-white);
     font-weight: 700;
 }
 
 .info-heading {
     font-size: 36px;
-    color: #1F2937;
+    color: var(--color-dark);
     font-weight: 900;
     margin-bottom: 24px;
 }
 
 .quote {
-    background-color: #E5E7EB;
+    background-color: var(--color-light);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -129,7 +133,7 @@ section {
 
 .quote-text {
     font-size: 36px;
-    color: #1F2937;
+    color: var(--color-dark);
     font-weight: 300;
     font-style: italic;
     padding: 0 80px;
@@ -145,7 +149,7 @@ section {
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: #3882F6;
+    background-color: var(--color-primary);
     padding: 40px 80px;
     width: 100%;
     gap: 60px;
@@ -158,7 +162,7 @@ section {
     gap: 10px;
     text-align: left;
     flex: 1;
-    color: #F9FAFB;
+    color: var(--color-white);
 }
 
 .cta-heading {
@@ -167,7 +171,7 @@ section {
 }
 
 .cta-card .btn-sign-up {
-    border: 1.5px solid #F9FAFB;
+    border: 1.5px solid var(--color-white);
 }
 
 footer {
@@ -175,7 +179,6 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 16px 0;
-    color: #E5E7EB;
 }
 
 @media (max-width: 600px) {
